@@ -1,0 +1,145 @@
+<div class="contact-me">
+    <div class="bcard" id="bcard">
+        <img src="img/bcard2.png">
+        <div class="bcard-infos">
+            <h5 class="company-name">A-R Profile</h5>
+            <p class="title">IT Students</p>
+            <div class="info-h6">
+                <h6 class="Website">Website</h6>
+                <h6 class="rona-email">ronamay.balangat@bicol-u.edu.ph</h6>
+                <h6 class="phone-no">639998563419</h6>
+                <h6 class="address">Bicol University</h6>
+            </div>
+        </div>
+        <button type="closebtn" onclick="closebcard()"><i class="uil uil-times"></i></button>
+    </div>
+</div>
+
+.bcard{
+    width: 100%;
+    max-width: 400px;
+    background-color: #070606;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 6px;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-120%, -50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+  }
+  .open-bcard{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  .bcard img{
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  .bcard-infos{
+    margin-top: -10.5rem;
+    margin-left: 3.5rem;
+    text-align: left;
+    line-height: 0.3rem;
+  }
+  .company-name{
+    font-size: 1rem;
+  }
+  .Website{
+    font-size: 12px;
+  }
+  .bcard-infos .info-h6{
+    margin-top: 2.8rem;
+  }
+  .bcard-infos h6{
+    margin-top: -1rem;
+  }
+  .bcard-infos .title{
+    font-size: 13px;
+    margin-top: -0.8rem;
+  }
+  .bcard h2{
+    color: #fff;
+  }
+  .bcard button{
+    border-radius: 15%;
+    margin-top: 5%;
+    background-color: hsl(var(--hue-color), 57%, 53%);
+    border-color: hsl(var(--hue-color), 57%, 53%);
+    cursor: pointer;
+  }
+  .bcard i{
+    font-size: 1.2rem;
+    color: #fff;
+    font-weight: 700;
+  }
+  .button--flex{
+    display: inline-flex;
+    align-items: center;
+  }
+  
+  /*==================== ABOUT ====================*/
+  .about-container{
+    font-family: var(--body-font);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+    white-space: wrap;
+  }
+  .about-us{
+    background-color: beige;
+    width: 270px;
+    height: 500px;
+    margin: 20px;
+    border-radius: 15px;
+  }
+  .card-image{
+    height: 250px;
+    margin-bottom: 15px;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+  }
+  .about-img1{
+    background-image: url('img/1x1\ photo.jpg');
+  }
+  .about-img2{
+    background-image: url('img/1x1\ photo.jpg');
+  }
+  .about-text-box{
+    padding: 10px;
+  
+  }
+  .name1{
+    display: flex;
+  }
+  .name{
+    display: flex;
+    white-space: normal;
+  }
+  .about-text-box h5{
+    font-size: 1rem;
+  }
+  .about-text-box p{
+    font-size: 1rem;
+    margin-left: 0.5rem;
+  }
+  .about-us a{
+    background-color: rgb(53, 58, 56);
+    color: #fff;
+    padding: 10px 30px;
+    display: block;
+    text-align: center;
+    margin: 15px 30px;
+  }
+  .about-us:hover{
+    background-color: rgba(62, 62, 62);
+    color: white;
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: all is ease;
+  }
+  

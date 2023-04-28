@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--==================== UNICONS ====================-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+        
+    <!--==================== CSS ====================-->
+    <link rel="stylesheet" href="profile.css" />
+
+    <title>AR_Profile/Portfolio</title>
+</head>
+<body>
+    <!--==================== RESPONSIVE NAVBAR====================-->
+    <header>
+        <div class="header-left">
+            <div class="logo">
+                <img src="#" alt="">
+                <h3>LOGO</h3>
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="home.html" class="nav-icon">
+                            <i class="uil uil-estate"></i>
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="about.html" class="nav-icon">
+                            <i class="uil uil-user"></i>
+                            About
+                        </a>
+                    </li>
+                    <li>
+                        <a href="skills.html" class="nav-icon">
+                            <i class="uil uil-file-alt"></i>
+                            Skills
+                        </a>
+                    </li>
+                    <li>
+                        <a href="portfolio.html" class="nav-icon">
+                            <i class="uil uil-mountains-sun"></i>
+                            Portfolio
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contactus.html" class="nav-icon">
+                            <i class="uil uil-message"></i>ContactUs
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="uil uil-moon"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-right">
+            <div class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </header>
+
+    <!--==================== FRONT PAGE ====================-->
+    <div class="container">
+        <h1>PORTFOLIO</h1>
+        <div class="row">
+            <div class="col">
+                <div class="feature-img">
+                    <img src="Vid_gallery_Img/pic1.png" width="100%">
+                    <img src="Vid_gallery_Img/play.png" class="play-btn" 
+                    onclick="playVideo('Vid_gallery_Img/pegasus.mp4')">
+                </div>
+            </div>
+            <div class="col">
+                <div class="small-img-row">
+                    <div class="small-img">
+                        <img src="Vid_gallery_Img/pic2.png">
+                        <img src="Vid_gallery_Img/play.png" class="play-btn" 
+                        onclick="playVideo('Vid_gallery_Img/law.mp4')">
+                    </div>
+                    <p>How to add multiple videos in a website or to make a video gallery</p>
+                </div>
+
+                <div class="small-img-row">
+                    <div class="small-img">
+                        <img src="Vid_gallery_Img/pic3.png">
+                        <img src="Vid_gallery_Img/play.png" class="play-btn"
+                        onclick="playVideo('Vid_gallery_Img/dsa.mp4')">
+                    </div>
+                    <p>How to add multiple videos in a website or to make a video gallery</p>
+                </div>
+
+                <div class="small-img-row">
+                    <div class="small-img">
+                        <img src="Vid_gallery_Img/pic4.png">
+                        <img src="Vid_gallery_Img/play.png" class="play-btn"
+                        onclick="playVideo('Vid_gallery_Img/html.mp4')">
+                    </div>
+                    <p>How to add multiple videos in a website or to make a video gallery</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="video-player" id="videoPlayer">
+        <video width="100%" controls autoplay id="myVideo">
+            <source src="Vid_gallery_Img/html.mp4" type="video/mp4">
+        </video>
+        <img src="Vid_gallery_Img/close.png" class="close-btn" onclick="stopVideo()">
+    </div>
+
+
+    <script>
+        var videoPlayer = document.getElementById("videoPlayer");
+        var myVideo = document.getElementById("myVideo");
+
+        function stopVideo(){
+            videoPlayer.style.display = "none";
+        }
+
+        function playVideo(file){
+            myVideo.src = file;
+            videoPlayer.style.display = "block";
+        }
+    </script>
+</body>
+    <script src="profile.js"></script>
+</html>

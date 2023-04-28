@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--==================== UNICONS ====================-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+        
+    <!--==================== CSS ====================-->
+    <link rel="stylesheet" href="profile.css" />
+
+    <title>AR_Profile</title>
+    <style>
+    .indiv-body{
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    }
+    .self-body{
+    width: 80%;
+    max-width: 1170px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px 30px;
+    }
+    .self-body .img-left{
+    overflow: hidden;
+    }
+    .self-body .img-left img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    }
+    .self-body .info-right{
+    display: flex;
+    align-items: center;
+    }
+    .self-body .info-right .info-content{
+    padding-left: 20px;
+    }
+    @media (max-width: 991px) {
+    .self-body .info-right .info-content{
+        padding-left: 0;
+    }
+    }
+    @media (max-width: 768px) {
+    .self-body{
+        width: 90%;
+        grid-template-columns: 1fr;
+    }
+    }
+
+    .self-body-1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    }
+    .self-info{
+    margin: 50px auto;
+    width: 80%;
+    }
+    .intro_title{
+    font-size: 2rem;
+    }
+    .intro_subtitle{
+    font-size: 1.5rem;
+    color: hsl(var(--hue-color), 8%, 45%);
+    font-weight: 600;
+    }
+    .intro_description{
+    height: 400px;
+    width: 90%;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    }
+    .self-info img{
+    max-width: 300px;
+    float: left;
+    border: 3px solid #fff;
+    border-radius: 10px;
+    margin-right: 20px;
+    }
+    .contactme-btn{
+    font-family: var(--body-font);
+    font-size: 1.3rem;
+    margin-top: -1rem;
+    text-decoration: none;
+    display: inline-block;
+    background-color: hsl(var(--hue-color), 69%, 61%);
+    color: #fff;
+    padding: 0.5rem;
+    border-radius: .5rem;
+    border-color: hsl(var(--hue-color), 69%, 61%);
+    font-weight: 600;
+    }
+    .contactme-btn:hover{
+    background-color: hsl(var(--hue-color), 57%, 53%);
+    }
+    .contactme-btn i{
+    margin-left: .7rem;
+    font-size: 1.25rem;
+    transition: .3s;
+    }
+    </style>
+</head>
+<body>
+    <!--==================== INDIVIDUAL INTRO ====================-->
+    <div class="indiv-body">
+        <div class="self-body">
+            <div class="img-left">
+                <img src="img/1x1 photo.jpg">
+            </div>
+            <div class="info-right">
+                <div class="info-content">
+                    <h1 class="intro_title">Hi, I am Rona</h1>
+                    <h3 class="intro_subtitle">Information Technology Student</h3>
+                    <p class="intro_description">As an IT student, I possess a strong passion for technology and a curiosity for innovation. 
+                        I have a solid foundation in programming languages, software development methodologies, and data analysis techniques. 
+                        I am constantly seeking new challenges to improve my skills and knowledge in the field of IT. 
+                        In addition to my technical expertise, I have excellent problem-solving skills, attention to detail, 
+                        and a collaborative approach to working in teams. <br><br>
+                        <button type="contactme" class="contactme-btn" onclick="openbcard()">Contact Me<i class="uil uil-message"></i></button>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+    <script src="profile.js"></script>
+</html>
